@@ -1,0 +1,3582 @@
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  × "before all" hook: codeceptjs.beforeSuite for "Login to Demo site" in 11ms
+Error: browserType.launch: Executable doesn't exist at C:\Users\Lenovo\AppData\Local\ms-playwright\chromium-1091\chrome-win\chrome.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+
+-- FAILURES:
+
+  1) LoginNavigate
+       "before all" hook: codeceptjs.beforeSuite for "Login to Demo site":
+     browserType.launch: Executable doesn't exist at C:\Users\Lenovo\AppData\Local\ms-playwright\chromium-1091\chrome-win\chrome.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+  browserType.launch: Executable doesn't exist at C:\Users\Lenovo\AppData\Local\ms-playwright\chromium-1091\chrome-win\chrome.exe
+  ╔═════════════════════════════════════════════════════════════════════════╗
+  ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+
+
+
+
+  FAIL  | 0 passed, 1 failed   // 17ms
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx playwright install
+Downloading Chromium 120.0.6099.28 (playwright build v1091) from https://playwright.azureedge.net/builds/chromium/1091/chromium-win64.zip
+122 Mb [====================] 100% 0.0s
+Chromium 120.0.6099.28 (playwright build v1091) downloaded to C:\Users\Lenovo\AppData\Local\ms-playwright\chromium-1091
+Downloading FFMPEG playwright build v1009 from https://playwright.azureedge.net/builds/ffmpeg/1009/ffmpeg-win64.zip
+1.4 Mb [====================] 100% 0.0s
+FFMPEG playwright build v1009 downloaded to C:\Users\Lenovo\AppData\Local\ms-playwright\ffmpeg-1009
+Downloading Firefox 119.0 (playwright build v1429) from https://playwright.azureedge.net/builds/firefox/1429/firefox-win64.zip
+80.5 Mb [====================] 100% 0.0s
+Firefox 119.0 (playwright build v1429) downloaded to C:\Users\Lenovo\AppData\Local\ms-playwright\firefox-1429
+Downloading Webkit 17.4 (playwright build v1944) from https://playwright.azureedge.net/builds/webkit/1944/webkit-win64.zip
+46.4 Mb [====================] 100% 0.0s
+Webkit 17.4 (playwright build v1944) downloaded to C:\Users\Lenovo\AppData\Local\ms-playwright\webkit-1944
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  × Login to Demo site in 12404ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Login to Demo site:
+     Field "Password" was not found by text|CSS|XPath
+      at new ElementNotFound (node_modules\codeceptjs\lib\helper\errors\ElementNotFound.js:15:11)
+      at assertElementExists (node_modules\codeceptjs\lib\helper\Playwright.js:3633:11)
+      at Playwright.fillField (node_modules\codeceptjs\lib\helper\Playwright.js:1617:5)
+
+  Scenario Steps:
+  - I.fillField("Password", "password") at Test.<anonymous> (.\LoginAndPlayaround_test.js:10:7)
+  - I.fillField("#search > input", "Amar") at Test.<anonymous> (.\LoginAndPlayaround_test.js:7:4)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:5:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Login_to_Demo_site.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 14s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  × Login to Demo site in 8115ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Login to Demo site:
+     Field "Password" was not found by text|CSS|XPath
+      at new ElementNotFound (node_modules\codeceptjs\lib\helper\errors\ElementNotFound.js:15:11)
+      at assertElementExists (node_modules\codeceptjs\lib\helper\Playwright.js:3633:11)
+      at Playwright.fillField (node_modules\codeceptjs\lib\helper\Playwright.js:1617:5)
+
+  Scenario Steps:
+  - I.fillField("Password", "password") at Test.<anonymous> (.\LoginAndPlayaround_test.js:10:7)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:8:4)
+  - I.fillField("#search > input", "Amar") at Test.<anonymous> (.\LoginAndPlayaround_test.js:7:4)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:5:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Login_to_Demo_site.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 10s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  × Login to Demo site in 8254ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Login to Demo site:
+     Field "Password" was not found by text|CSS|XPath
+      at new ElementNotFound (node_modules\codeceptjs\lib\helper\errors\ElementNotFound.js:15:11)
+      at assertElementExists (node_modules\codeceptjs\lib\helper\Playwright.js:3633:11)
+      at Playwright.fillField (node_modules\codeceptjs\lib\helper\Playwright.js:1617:5)
+
+  Scenario Steps:
+  - I.fillField("Password", "password") at Test.<anonymous> (.\LoginAndPlayaround_test.js:10:7)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:8:4)
+  - I.fillField("#search > input", "Amar") at Test.<anonymous> (.\LoginAndPlayaround_test.js:7:4)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:5:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Login_to_Demo_site.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 9s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:9
+        I.waitForElement({xpath: "//*[@id="home"]/div/div/div[2]/h1/text()"})
+                                           ^^^^
+
+SyntaxError: Unexpected identifier 'home'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected identifier 'home'
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:9
+        I.waitForElement({xpath: "//*[@id="home"]/div/div/div[2]/h1/text()"})
+                                           ^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:9
+        I.waitForElement({xpath: "//*[contains(text(),"Matt ")]'"})
+                                                       ^^^^
+
+SyntaxError: Unexpected identifier 'Matt'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected identifier 'Matt'
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:9
+        I.waitForElement({xpath: "//*[contains(text(),"Matt ")]'"})
+                                                       ^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:10
+        await I.waitForElement({ xpath: xpathSelector });
+        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:10
+        await I.waitForElement({ xpath: xpathSelector });
+        ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:10
+        await I.waitForElement({ xpath: xpathSelector });
+        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:10
+        await I.waitForElement({ xpath: xpathSelector });
+        ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Login to Demo site in 13177ms
+
+  OK  | 1 passed   // 14s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx allure open
+npm ERR! could not determine executable to run
+
+npm ERR! A complete log of this run can be found in: C:\Users\Lenovo\AppData\Local\npm-cache\_logs\2023-11-28T23_27_45_359Z-debug-0.log
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --plugins allure
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Login to Demo site in 6875ms
+
+  OK  | 1 passed   // 8s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx allure open
+npm ERR! could not determine executable to run
+
+npm ERR! A complete log of this run can be found in: C:\Users\Lenovo\AppData\Local\npm-cache\_logs\2023-11-28T23_30_02_160Z-debug-0.log
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npm install -g allure-commandline
+
+added 1 package in 3s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --plugins allure
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Login to Demo site in 6829ms
+
+  OK  | 1 passed   // 8s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs allure open
+
+Unknown command allure,open
+
+Usage: codecept <command> [options]
+
+Options:
+  -V, --version                                      output the version number
+  -h, --help                                         display help for command
+
+Commands:
+  init [path]                                        Creates dummy config in current dir or [path]
+  migrate [path]                                     Migrate json config to js config in current dir or [path]
+  shell|sh [options] [path]                          Interactive shell
+  list|l [path]                                      List all actions for I.
+  def [options] [path]                               Generates TypeScript definitions for all I actions.
+  gherkin:init|bdd:init [options] [path]             Prepare CodeceptJS to run feature files.
+  gherkin:steps|bdd:steps [options] [path]           Prints all defined gherkin steps.
+  gherkin:snippets|bdd:snippets [options] [path]     Generate step definitions from steps.
+  generate:test|gt [path]                            Generates an empty test
+  generate:pageobject|gpo [path]                     Generates an empty page object
+  generate:object|go [options] [path]                Generates an empty support object (page/step/fragment)
+  generate:helper|gh [path]                          Generates a new helper
+  run [options] [test]                               Executes tests
+  run-workers [options] <workers> [selectedRuns...]  Executes tests in workers
+  run-multiple [options] [suites...]                 Executes tests multiple
+  info [options] [path]                              Print debugging information concerning the local environment
+  dry-run [options] [test]                           Prints step-by-step scenario for a test without actually running it
+  run-rerun [options] [test]                         Executes tests in more than one test suite run
+  help [command]                                     display help for command
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx allure open
+
+ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+
+Please set the JAVA_HOME variable in your environment to match the
+location of your Java installation.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --plugins allure
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Login to Demo site in 7152ms
+
+  OK  | 1 passed   // 8s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>allure open
+'allure' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>allure open
+'allure' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npm install -g allure-commandline
+
+changed 1 package in 2s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>allure open
+'allure' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx allure open
+
+ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+
+Please set the JAVA_HOME variable in your environment to match the
+location of your Java installation.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs allure open
+
+Unknown command allure,open
+
+Usage: codecept <command> [options]
+
+Options:
+  -V, --version                                      output the version number
+  -h, --help                                         display help for command
+
+Commands:
+  init [path]                                        Creates dummy config in current dir or [path]
+  migrate [path]                                     Migrate json config to js config in current dir or [path]
+  shell|sh [options] [path]                          Interactive shell
+  list|l [path]                                      List all actions for I.
+  def [options] [path]                               Generates TypeScript definitions for all I actions.
+  gherkin:init|bdd:init [options] [path]             Prepare CodeceptJS to run feature files.
+  gherkin:steps|bdd:steps [options] [path]           Prints all defined gherkin steps.
+  gherkin:snippets|bdd:snippets [options] [path]     Generate step definitions from steps.
+  generate:test|gt [path]                            Generates an empty test
+  generate:pageobject|gpo [path]                     Generates an empty page object
+  generate:object|go [options] [path]                Generates an empty support object (page/step/fragment)
+  generate:helper|gh [path]                          Generates a new helper
+  run [options] [test]                               Executes tests
+  run-workers [options] <workers> [selectedRuns...]  Executes tests in workers
+  run-multiple [options] [suites...]                 Executes tests multiple
+  info [options] [path]                              Print debugging information concerning the local environment
+  dry-run [options] [test]                           Prints step-by-step scenario for a test without actually running it
+  run-rerun [options] [test]                         Executes tests in more than one test suite run
+  help [command]                                     display help for command
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:4
+Scenario('Search for 'Matt'', ({ I }) => {
+         ^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+missing ) after argument list
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:4
+Scenario('Search for 'Matt'', ({ I }) => {
+         ^^^^^^^^^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:27
+Scenario('Search for 'Myst'', ({ I }) => {
+         ^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+missing ) after argument list
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:27
+Scenario('Search for 'Myst'', ({ I }) => {
+         ^^^^^^^^^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:27
+Scenario('Search for 'Myst'', ({ I }) => {
+         ^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+missing ) after argument list
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:27
+Scenario('Search for 'Myst'', ({ I }) => {
+         ^^^^^^^^^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Search for Matt in 6857ms
+Element is present!
+  × Search for Myst in 6905ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst:
+     element ({xpath: //*[contains(text(),"Myst")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(),"Myst")]').first()
+
+  Error: element ({xpath: //*[contains(text(),"Myst")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(),\"Myst\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:34:4)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:31:4)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:30:4)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:28:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst.failed.png
+
+
+  FAIL  | 1 passed, 1 failed   // 15s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Search for Matt in 6980ms
+Element is present!
+  × Search for Myst in 7006ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst:
+     element ({xpath: //*[contains(text(), "Myst") and contains(text(), "Experts")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(), "Myst") and contains(text(), "Experts")]').first()
+
+  Error: element ({xpath: //*[contains(text(), "Myst") and contains(text(), "Experts")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(), \"Myst\") and contains(text(), \"Experts\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:34:4)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:31:4)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:30:4)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:28:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst.failed.png
+
+
+  FAIL  | 1 passed, 1 failed   // 15s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  × Search for Matt in 7571ms
+Element is present!
+  × Search for Myst in 7123ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Matt:
+     element ({xpath: //*[contains(text(),"Matt")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(),"Matt")]').first()
+
+  Error: element ({xpath: //*[contains(text(),"Matt")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(),\"Matt\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:11:4)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:8:4)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:7:4)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:5:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Matt.failed.png
+
+  2) LoginNavigate
+       Search for Myst:
+     element ({xpath: //*[contains(text(), "Myst") and contains(text(), "Experts")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(), "Myst") and contains(text(), "Experts")]').first()
+
+  Error: element ({xpath: //*[contains(text(), "Myst") and contains(text(), "Experts")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(), \"Myst\") and contains(text(), \"Experts\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:34:4)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:31:4)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:30:4)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:28:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst.failed.png
+
+
+  FAIL  | 0 passed, 2 failed   // 16s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Search for Matt in 6443ms
+Element is present!
+  × Search for Myst in 10585ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst:
+     element (//*[contains(text(), "Myst") and contains(text(), "Experts")]) still not present on page after 5 sec
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(), "Myst") and contains(text(), "Experts")]').first()
+
+  Error: element (//*[contains(text(), "Myst") and contains(text(), "Experts")]) still not present on page after 5 sec
+  locator.waitFor: Timeout 5000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement("//*[contains(text(), "Myst") and contains(text(), "Experts")]", 5) at Test.<anonymous> (.\LoginAndPlayaround_test.js:35:4)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:31:4)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:30:4)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:28:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst.failed.png
+
+
+  FAIL  | 1 passed, 1 failed   // 18s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Search for Matt in 6951ms
+Element is present!
+  × Search for Myst in 16042ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst:
+     element (//*[contains(text(), "Myst") and contains(text(), "Experts")]) still not present on page after 10 sec
+locator.waitFor: Timeout 10000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(), "Myst") and contains(text(), "Experts")]').first()
+
+  Error: element (//*[contains(text(), "Myst") and contains(text(), "Experts")]) still not present on page after 10 sec
+  locator.waitFor: Timeout 10000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement("//*[contains(text(), "Myst") and contains(text(), "Experts")]", 10) at Test.<anonymous> (.\LoginAndPlayaround_test.js:35:4)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:31:4)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:30:4)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:28:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst.failed.png
+
+
+  FAIL  | 1 passed, 1 failed   // 24s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Search for Matt in 6794ms
+Element is present!
+  √ Search for Myst in 6853ms
+
+  OK  | 2 passed   // 15s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx playwright install
+^C^CTerminate batch job (Y/N)?
+^C
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:44
+  Scenario('Search for 'Ann', ({ I }) => {
+           ^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+missing ) after argument list
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:44
+  Scenario('Search for 'Ann', ({ I }) => {
+           ^^^^^^^^^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:44
+  Scenario('Search for 'Ann', ({ I }) => {
+           ^^^^^^^^^^^^^
+
+SyntaxError: missing ) after argument list
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+missing ) after argument list
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:44
+  Scenario('Search for 'Ann', ({ I }) => {
+           ^^^^^^^^^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:64
+});
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected end of input
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:64
+});
+
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:62
+});
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected end of input
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:62
+});
+
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Search for Matt in 6508ms
+Element is present!
+  √ Search for Myst and Experts in 6642ms
+Element is present!
+  √ Search for Ann in 5943ms
+
+  OK  | 3 passed   // 21s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Search for Matt in 6544ms
+Element is present!
+  × Search for Myst and Experts in 8004ms
+Element is present!
+  √ Search for Ann in 6347ms
+Element is present!
+  × Search for psy in 6946ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     element ({xpath: //*[contains(text(), "Myst") and contains(text(), "Experts")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(), "Myst") and contains(text(), "Experts")]').first()
+
+  Error: element ({xpath: //*[contains(text(), "Myst") and contains(text(), "Experts")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(), \"Myst\") and contains(text(), \"Experts\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:21:5)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:18:5)
+  - I.fillField("#search > input", "Myst") at Test.<anonymous> (.\LoginAndPlayaround_test.js:17:5)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:15:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+  2) LoginNavigate
+       Search for psy:
+     element ({xpath: //*[contains(text(),"psy")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(),"psy")]').first()
+
+  Error: element ({xpath: //*[contains(text(),"psy")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(),\"psy\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:43:5)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:40:5)
+  - I.fillField("#search > input", "psy") at Test.<anonymous> (.\LoginAndPlayaround_test.js:39:5)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:37:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_psy.failed.png
+
+
+  FAIL  | 2 passed, 2 failed   // 30s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:45
+  else console.log('Element is not present!');
+  ^^^^
+
+SyntaxError: Unexpected token 'else'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected token 'else'
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:45
+  else console.log('Element is not present!');
+  ^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:43
+  if I.waitForElement({ xpath: xpathSelector });
+     ^
+
+SyntaxError: Unexpected identifier 'I'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected identifier 'I'
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:43
+  if I.waitForElement({ xpath: xpathSelector });
+     ^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Search for Matt in 6602ms
+Element is present!
+  √ Search for Myst and Experts in 6408ms
+Element is present!
+  √ Search for Ann in 6337ms
+Element is present!
+  × Search for psy in 7213ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for psy:
+     element ({xpath: //*[contains(text(),"psy")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(),"psy")]').first()
+
+  Error: element ({xpath: //*[contains(text(),"psy")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(),\"psy\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:44:9)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:40:5)
+  - I.fillField("#search > input", "psy") at Test.<anonymous> (.\LoginAndPlayaround_test.js:39:5)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:37:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_psy.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 29s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Search for Matt in 6512ms
+Element is present!
+  × Search for Myst and Experts in 7680ms
+Element is present!
+  √ Search for Ann in 6347ms
+Element is present!
+  √ Search for psy in 6737ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     element ({xpath: //*[contains(text(), "Myst") and contains(text(), "Experts")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(), "Myst") and contains(text(), "Experts")]').first()
+
+  Error: element ({xpath: //*[contains(text(), "Myst") and contains(text(), "Experts")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(), \"Myst\") and contains(text(), \"Experts\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:21:5)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:18:5)
+  - I.fillField("#search > input", "Myst") at Test.<anonymous> (.\LoginAndPlayaround_test.js:17:5)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:15:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 29s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  √ Search for Matt in 6581ms
+Element is present!
+  √ Search for Myst and Experts in 6237ms
+Element is present!
+  √ Search for Ann in 6426ms
+Element is present!
+  √ Search for psy in 6619ms
+
+  OK  | 4 passed   // 28s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:15
+   const elementCount = await I.executeScript(function(xpathSelectorMatt) {
+                        ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:15
+   const elementCount = await I.executeScript(function(xpathSelectorMatt) {
+                        ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:15
+   elementCount = await I.executeScript(function(xpathSelectorMatt) {
+                  ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:15
+   elementCount = await I.executeScript(function(xpathSelectorMatt) {
+                  ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  × Search for Matt in 6606ms
+Element is present!
+  √ Search for Myst and Experts in 6535ms
+Element is present!
+  √ Search for Ann in 6345ms
+Element is present!
+  √ Search for psy in 7315ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Matt:
+     xpathSelectorMyst is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:17:6)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Matt.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 29s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  × Search for Matt in 7607ms
+Element is present!
+  √ Search for Myst and Experts in 6274ms
+Element is present!
+  √ Search for Ann in 5861ms
+Element is present!
+  √ Search for psy in 6259ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Matt:
+     xpathSelectorMyst is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:17:6)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Matt.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 28s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+  × Search for Matt in 7168ms
+Element is present!
+  √ Search for Myst and Experts in 6753ms
+Element is present!
+  √ Search for Ann in 7100ms
+Element is present!
+  √ Search for psy in 6589ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Matt:
+     xpathSelectorMyst is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:18:6)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Matt.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 30s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Myst': [object Promise]
+  × Search for Matt in 7128ms
+Element is present!
+  √ Search for Myst and Experts in 6724ms
+Element is present!
+  √ Search for Ann in 6065ms
+Element is present!
+  √ Search for psy in 6865ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Matt:
+     page.evaluate: TypeError: Cannot read properties of undefined (reading 'length')
+    at eval (eval at evaluate (:226:30), <anonymous>:2:106)
+    at UtilityScript.evaluate (<anonymous>:228:17)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+  page.evaluate: TypeError: Cannot read properties of undefined (reading 'length')
+      at eval (eval at evaluate (:226:30), <anonymous>:2:106)
+      at UtilityScript.evaluate (<anonymous>:228:17)
+
+  Scenario Steps:
+  - I.executeScript(function(xpathSelectorMatt) {
+      return document.evaluate(xpathSelectorMatt, document, null, XPathResult.ANY_TYPE, null).nodesSnapshot.length;
+    }, "//*[contains(text(),"Matt")]") at Test.<anonymous> (.\LoginAndPlayaround_test.js:16:21)
+  - I.waitForElement({"xpath":"//*[contains(text(),\"Matt\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:11:5)
+  - I.waitForElement({"xpath":"//*[contains(text(),\"Matt\")]"}, 5) at Test.<anonymous> (.\LoginAndPlayaround_test.js:10:5)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:7:5)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:6:5)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:4:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Matt.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 29s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  × Search for Matt in 7825ms
+Element is present!
+  √ Search for Myst and Experts in 7601ms
+Element is present!
+  √ Search for Ann in 5894ms
+Element is present!
+  √ Search for psy in 5665ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Matt:
+     page.evaluate: TypeError: Cannot read properties of undefined (reading 'length')
+    at eval (eval at evaluate (:226:30), <anonymous>:2:106)
+    at UtilityScript.evaluate (<anonymous>:228:17)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+  page.evaluate: TypeError: Cannot read properties of undefined (reading 'length')
+      at eval (eval at evaluate (:226:30), <anonymous>:2:106)
+      at UtilityScript.evaluate (<anonymous>:228:17)
+
+  Scenario Steps:
+  - I.executeScript(function(xpathSelectorMatt) {
+      return document.evaluate(xpathSelectorMatt, document, null, XPathResult.ANY_TYPE, null).nodesSnapshot.length;
+    }, "//*[contains(text(),"Matt")]") at Test.<anonymous> (.\LoginAndPlayaround_test.js:16:21)
+  - I.waitForElement({"xpath":"//*[contains(text(),\"Matt\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:11:5)
+  - I.waitForElement({"xpath":"//*[contains(text(),\"Matt\")]"}, 5) at Test.<anonymous> (.\LoginAndPlayaround_test.js:10:5)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:7:5)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:6:5)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:4:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Matt.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 29s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:17
+  const elementCount = await I.executeScript(function(xpath) {
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:17
+  const elementCount = await I.executeScript(function(xpath) {
+                       ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  × Search for Matt in 6807ms
+Element is present!
+  √ Search for Myst and Experts in 5471ms
+Element is present!
+  √ Search for Ann in 9350ms
+Element is present!
+  √ Search for psy in 5374ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Matt:
+     page.evaluate: TypeError: Cannot read properties of undefined (reading 'length')
+    at eval (eval at evaluate (:226:30), <anonymous>:2:94)
+    at UtilityScript.evaluate (<anonymous>:228:17)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+  page.evaluate: TypeError: Cannot read properties of undefined (reading 'length')
+      at eval (eval at evaluate (:226:30), <anonymous>:2:94)
+      at UtilityScript.evaluate (<anonymous>:228:17)
+
+  Scenario Steps:
+  - I.executeScript(function(xpath) {
+      return document.evaluate(xpath, document, null, XPathResult.ANY_TYPE, null).nodesSnapshot.length;
+    }, "//*[contains(text(),"Matt")]") at Test.<anonymous> (.\LoginAndPlayaround_test.js:17:26)
+  - I.waitForElement({"xpath":"//*[contains(text(),\"Matt\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:11:5)
+  - I.waitForElement({"xpath":"//*[contains(text(),\"Matt\")]"}, 5) at Test.<anonymous> (.\LoginAndPlayaround_test.js:10:5)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:7:5)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:6:5)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:4:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Matt.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 29s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:17
+  const elementCount = await I.executeScript(function(xpath) {
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:17
+  const elementCount = await I.executeScript(function(xpath) {
+                       ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 5887ms
+Element is present!
+  √ Search for Myst and Experts in 6031ms
+Element is present!
+  √ Search for Ann in 5462ms
+Element is present!
+  √ Search for psy in 5482ms
+
+  OK  | 4 passed   // 25s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:57
+});
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected token '}'
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:57
+});
+^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:16
+  const elementCount = await I.executeScript(function(xpath) {
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:16
+  const elementCount = await I.executeScript(function(xpath) {
+                       ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:57
+});
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected token '}'
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:57
+});
+^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:28
+});
+^
+
+SyntaxError: Unexpected token '}'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected token '}'
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:28
+});
+^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 5344ms
+Element is present!
+  × Search for Myst and Experts in 6832ms
+Element is present!
+  √ Search for Ann in 5551ms
+Element is present!
+  √ Search for psy in 5447ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     xpathSelectorMatt is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:53:6)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 25s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx playwright install
+^C^CTerminate batch job (Y/N)?
+^CThe system cannot open the device or file specified.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 6019ms
+Element is present!
+  × Search for Myst and Experts in 6650ms
+Element is present!
+  √ Search for Ann in 4954ms
+Element is present!
+  √ Search for psy in 5220ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     xpathSelectorMatt is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:53:6)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 25s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 5581ms
+Element is present!
+  × Search for Myst and Experts in 6271ms
+Element is present!
+  √ Search for Ann in 5553ms
+Element is present!
+  √ Search for psy in 5786ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     xpathSelectorMatt is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:54:6)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 25s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 5872ms
+Element is present!
+  × Search for Myst and Experts in 12349ms
+Element is present!
+  √ Search for Ann in 4958ms
+Element is present!
+  √ Search for psy in 5440ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     xpathSelectorMatt is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:51:6)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 30s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:15
+ const elementCount = await I.executeScript(function(xpathSelector) {
+                      ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:15
+ const elementCount = await I.executeScript(function(xpathSelector) {
+                      ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 5730ms
+Element is present!
+  × Search for Myst and Experts in 6583ms
+Element is present!
+  √ Search for Ann in 5535ms
+Element is present!
+  √ Search for psy in 5863ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     xpathSelectorMatt is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:51:6)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 25s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 5677ms
+  × Search for Myst and Experts in 5151ms
+Element is present!
+  √ Search for Ann in 5334ms
+Element is present!
+  √ Search for psy in 12146ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     xpathSelectorMatt is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:32:31)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 30s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 5943ms
+Element is present!
+  × Search for Myst and Experts in 6502ms
+Element is present!
+  √ Search for Ann in 5472ms
+Element is present!
+  √ Search for psy in 5737ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     xpathSelectorMatt is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:53:6)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 25s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 5761ms
+Element is present!
+Number of elements containing 'Myst': [object Promise]
+  √ Search for Myst and Experts in 5337ms
+Element is present!
+  √ Search for Ann in 5414ms
+Element is present!
+  √ Search for psy in 4904ms
+
+  OK  | 4 passed   // 23s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 5938ms
+Element is present!
+Number of elements containing 'Myst': [object Promise]
+  √ Search for Myst and Experts in 5605ms
+Element is present!
+Number of elements containing 'Ann': [object Promise]
+  √ Search for Ann in 5166ms
+Element is present!
+Number of elements containing 'Ann': [object Promise]
+  √ Search for psy in 5298ms
+
+  OK  | 4 passed   // 24s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 5749ms
+Element is present!
+Number of elements containing 'Myst': [object Promise]
+  √ Search for Myst and Experts in 5932ms
+Element is present!
+Number of elements containing 'Ann': [object Promise]
+  √ Search for Ann in 5328ms
+Element is present!
+Number of elements containing 'Ann': [object Promise]
+  √ Search for psy in 12291ms
+
+  OK  | 4 passed   // 31s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': [object Promise]
+  √ Search for Matt in 6007ms
+Element is present!
+Number of elements containing 'Myst': [object Promise]
+  √ Search for Myst and Experts in 4828ms
+Element is present!
+Number of elements containing 'Ann': [object Promise]
+  √ Search for Ann in 5528ms
+Element is present!
+Number of elements containing 'psy': 13
+  √ Search for psy in 5627ms
+
+  OK  | 4 passed   // 24s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:14
+  await I.waitForElement({ xpath: xpathSelectorMatt }, 5); // Wait for the element to appear
+  ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:14
+  await I.waitForElement({ xpath: xpathSelectorMatt }, 5); // Wait for the element to appear
+  ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:14
+  await I.waitForElement({ xpath: xpathSelectorMatt }, 5); // Wait for the element to appear
+  ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:14
+  await I.waitForElement({ xpath: xpathSelectorMatt }, 5); // Wait for the element to appear
+  ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:17
+  const xpathSelectorMatt = '//*[contains(text(),"psy")]';
+        ^
+
+SyntaxError: Identifier 'xpathSelectorMatt' has already been declared
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Identifier 'xpathSelectorMatt' has already been declared
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:17
+  const xpathSelectorMatt = '//*[contains(text(),"psy")]';
+        ^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:17
+  const xpathSelectorMatt = '//*[contains(text(),"psy")]';
+        ^
+
+SyntaxError: Identifier 'xpathSelectorMatt' has already been declared
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Identifier 'xpathSelectorMatt' has already been declared
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:17
+  const xpathSelectorMatt = '//*[contains(text(),"psy")]';
+        ^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:17
+  const xpathSelectorMatt = '//*[contains(text(),"Matt")]';
+        ^
+
+SyntaxError: Identifier 'xpathSelectorMatt' has already been declared
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Identifier 'xpathSelectorMatt' has already been declared
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:17
+  const xpathSelectorMatt = '//*[contains(text(),"Matt")]';
+        ^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:42
+  const xpathSelectorMyst = '//*[contains(text(),"Myst")]';
+        ^
+
+SyntaxError: Identifier 'xpathSelectorMyst' has already been declared
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Identifier 'xpathSelectorMyst' has already been declared
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:42
+  const xpathSelectorMyst = '//*[contains(text(),"Myst")]';
+        ^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:47
+  const elementCount = await I.executeScript(function(xpathSelector) {
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:47
+  const elementCount = await I.executeScript(function(xpathSelector) {
+                       ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:71
+  const xpathSelectorAnn = '//*[contains(text(),"psy")]';
+        ^
+
+SyntaxError: Identifier 'xpathSelectorAnn' has already been declared
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Identifier 'xpathSelectorAnn' has already been declared
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:71
+  const xpathSelectorAnn = '//*[contains(text(),"psy")]';
+        ^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': 6
+  √ Search for Matt in 6608ms
+Element is present!
+Element is present!
+Element is present!
+Number of elements containing 'Myst': [object Promise]
+  × Search for Myst and Experts in 10863ms
+Element is present!
+Element is present!
+Number of elements containing 'Ann': 18
+  √ Search for Ann in 6540ms
+Element is present!
+Number of elements containing 'psy': 12
+  √ Search for psy in 6656ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     element ({xpath: //*[contains(text(),"Myst")]}) still not present on page after 5 sec
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(),"Myst")]').first()
+
+  Error: element ({xpath: //*[contains(text(),"Myst")]}) still not present on page after 5 sec
+  locator.waitFor: Timeout 5000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(),\"Myst\")]"}, 5) at Test.<anonymous> (.\LoginAndPlayaround_test.js:34:5)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:31:5)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:30:5)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:28:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 33s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': 6
+  √ Search for Matt in 11785ms
+Element is present!
+Element is present!
+Element is present!
+Number of elements containing 'Myst': [object Promise]
+  × Search for Myst and Experts in 10308ms
+Element is present!
+Element is present!
+Number of elements containing 'Ann': 18
+  √ Search for Ann in 12162ms
+Element is present!
+Number of elements containing 'psy': 13
+  √ Search for psy in 5548ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Search for Myst and Experts:
+     element ({xpath: //*[contains(text(), "Myst") and contains(text(), "Experts")]}) still not present on page after 5 sec
+locator.waitFor: Timeout 5000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(), "Myst") and contains(text(), "Experts")]').first()
+
+  Error: element ({xpath: //*[contains(text(), "Myst") and contains(text(), "Experts")]}) still not present on page after 5 sec
+  locator.waitFor: Timeout 5000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(), \"Myst\") and contains(text(), \"Experts\")]"}, 5) at Test.<anonymous> (.\LoginAndPlayaround_test.js:34:5)
+  - I.pressKey("Enter") at Test.<anonymous> (.\LoginAndPlayaround_test.js:31:5)
+  - I.fillField("#search > input", "Matt") at Test.<anonymous> (.\LoginAndPlayaround_test.js:30:5)
+  - I.amOnPage("https://www.oranum.com/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:28:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Search_for_Myst_and_Experts.failed.png
+
+
+  FAIL  | 3 passed, 1 failed   // 42s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': 6
+  √ Search for Matt in 5941ms
+Element is present!
+Element is present!
+Element is present!
+Number of elements containing 'Myst': [object Promise]
+  √ Search for Myst and Experts in 5792ms
+Element is present!
+Element is present!
+Number of elements containing 'Ann': 18
+  √ Search for Ann in 5428ms
+Element is present!
+Number of elements containing 'psy': 12
+  √ Search for psy in 5298ms
+
+  OK  | 4 passed   // 24s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Search for new"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Search for psy
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 0ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Search for new"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Search for psy
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 0ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Search for psy
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': 6
+  √ Search for Matt in 11325ms
+Element is present!
+Element is present!
+Element is present!
+Number of elements containing 'Myst': [object Promise]
+  √ Search for Myst and Experts in 6251ms
+Element is present!
+Element is present!
+Number of elements containing 'Ann': 18
+  √ Search for Ann in 5683ms
+Element is present!
+Number of elements containing 'psy': 12
+  √ Search for psy in 5741ms
+  √ Search for psy in 4167ms
+
+  OK  | 5 passed   // 35s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "'Check and Click Signup Button'"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 1ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check and Click Signup Button"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Clicked on Signup button.
+  √ Check and Click Signup Button in 11353ms
+
+  OK  | 1 passed   // 12s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check and Click Signup Button"
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "'Check if the Get Credits button'"
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:143
+          const isElementEnabled = await I.executeScript(function() {
+                                   ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:143
+          const isElementEnabled = await I.executeScript(function() {
+                                   ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "'Check if the Get Credits button'"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 0ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check and Click Signup Button"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Clicked on Signup button.
+  √ Check and Click Signup Button in 6058ms
+
+  OK  | 1 passed   // 7s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if the Get Credits button"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+The "Get Credits" link is not present on the page.
+  √ Check if the Get Credits button in 5514ms
+
+  OK  | 1 passed   // 6s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if the Add to favorites button"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+The "Get Credits" link is not present on the page.
+  √ Check if the Add to favorites button in 6850ms
+
+  OK  | 1 passed   // 8s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if the Surprise buttons"
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:205
+});
+ ^
+
+SyntaxError: Unexpected token ')'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected token ')'
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:205
+});
+ ^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if the Surprise buttons"
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:205
+
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected end of input
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:205
+
+
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if the Surprise buttons"
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:190
+  const count = await I.grabNumberOfVisibleElements(this.surpriseImages);
+                ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:190
+  const count = await I.grabNumberOfVisibleElements(this.surpriseImages);
+                ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if the Surprise buttons"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 1ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if the Surprise buttons"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 0ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if the Surprise buttons"
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:205
+
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected end of input
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:205
+
+
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if the Surprise buttons"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 1ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  × Count and print names of elements in 7210ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Count and print names of elements:
+     document is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:192:18)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Count_and_print_names_of_elements.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 8s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Number of elements containing the specified text: [object Promise]
+Names of elements:
+  × Count and print names of elements in 2100ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Count and print names of elements:
+     element ({xpath: //*[contains(text(), "Your_Text_Here")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(), "Your_Text_Here")]').first()
+
+  Error: element ({xpath: //*[contains(text(), "Your_Text_Here")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(), \"Your_Text_Here\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:194:5)
+  - I.amOnPage("https://www.example.com") at Test.<anonymous> (.\LoginAndPlayaround_test.js:188:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Count_and_print_names_of_elements.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 3s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:191
+  const xpathSelector = '//span[@class='mc_surprise__image']]'; // Replace with your XPath
+                                        ^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Unexpected identifier 'mc_surprise__image'
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected identifier 'mc_surprise__image'
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:191
+  const xpathSelector = '//span[@class='mc_surprise__image']]'; // Replace with your XPath
+                                        ^^^^^^^^^^^^^^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  × Count and print names of elements in 1097ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Count and print names of elements:
+     xpathSelector is not defined
+      at Test.<anonymous> (LoginAndPlayaround_test.js:194:29)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:92:14)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Count_and_print_names_of_elements.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 2s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Number of elements containing the specified text: [object Promise]
+Names of elements:
+  × Count and print names of elements in 2113ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Count and print names of elements:
+     element ({xpath: //*[contains(text(),"surprise")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(),"surprise")]').first()
+
+  Error: element ({xpath: //*[contains(text(),"surprise")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(),\"surprise\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:194:5)
+  - I.amOnPage("https://www.example.com") at Test.<anonymous> (.\LoginAndPlayaround_test.js:188:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Count_and_print_names_of_elements.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 3s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Number of elements containing the specified text: [object Promise]
+Names of elements:
+  × Count and print names of elements in 2057ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Count and print names of elements:
+     element ({xpath: //*[contains(text(),"surprise")]}) still not present on page after 1 sec
+locator.waitFor: Timeout 1000ms exceeded.
+Call log:
+  - waiting for locator('//*[contains(text(),"surprise")]').first()
+
+  Error: element ({xpath: //*[contains(text(),"surprise")]}) still not present on page after 1 sec
+  locator.waitFor: Timeout 1000ms exceeded.
+  Call log:
+
+  Scenario Steps:
+  - I.waitForElement({"xpath":"//*[contains(text(),\"surprise\")]"}) at Test.<anonymous> (.\LoginAndPlayaround_test.js:194:5)
+  - I.amOnPage("https://www.example.com") at Test.<anonymous> (.\LoginAndPlayaround_test.js:188:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Count_and_print_names_of_elements.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 3s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  × Count and print names of elements in 987ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Count and print names of elements:
+
+      expected visible elements '[]' not to be empty
+      + expected - actual
+
+
+
+
+  Scenario Steps:
+  - I.seeElement("//span[@class="mc_surprise__image"]") at Test.<anonymous> (.\LoginAndPlayaround_test.js:191:6)
+  - I.amOnPage("https://www.example.com") at Test.<anonymous> (.\LoginAndPlayaround_test.js:188:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Count_and_print_names_of_elements.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 2s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  √ Count and print names of elements in 6491ms
+
+  OK  | 1 passed   // 7s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:190
+  const elementCount = await I.grabNumberOfVisibleElements('//span[@class="mc_surprise__image"]');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:190
+  const elementCount = await I.grabNumberOfVisibleElements('//span[@class="mc_surprise__image"]');
+                       ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Number of elements: [object Promise]
+  √ Count and print names of elements in 901ms
+
+  OK  | 1 passed   // 2s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:190
+  const elementCount = await I.grabNumberOfVisibleElements('//span[@class="mc_surprise__image"]');
+                       ^^^^^
+
+SyntaxError: await is only valid in async functions and the top level bodies of modules
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+await is only valid in async functions and the top level bodies of modules
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:190
+  const elementCount = await I.grabNumberOfVisibleElements('//span[@class="mc_surprise__image"]');
+                       ^^^^^
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Number of elements: [object Promise]
+  √ Count and print names of elements in 814ms
+
+  OK  | 1 passed   // 2s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Number of elements: [object Promise]
+  √ Count and print names of elements in 789ms
+
+  OK  | 1 passed   // 2s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Number of elements: [object Promise]
+  √ Count and print names of elements in 6717ms
+
+  OK  | 1 passed   // 8s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count number of surprises buttons and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 1ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Count number of surprises buttons and print names of elements"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Number of elements: [object Promise]
+  √ Count number of surprises buttons and print names of elements in 6685ms
+
+  OK  | 1 passed   // 8s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if "Start Private Session" button is present, visible, and enabled"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 1ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if "Start Private Session" button is present, visible, and enabled"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 1ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if Start Private Session button is presen and visible and enabled"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 1ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if Start Private Session button is presen and visible and enabled"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  × Check if Start Private Session button is presen and visible and enabled in 204ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Check if Start Private Session button is presen and visible and enabled:
+     Object of type Puppeteer is not defined in container
+      at getInjectedArguments (node_modules\codeceptjs\lib\scenario.js:213:13)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:73:29)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Check_if_Start_Private_Session_button_is_presen_and_visible_and_enabled.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 1s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if Start Private Session button is presen and visible and enabled"
+'C:\Users\Lenovo\Downloads\codeceptjs-master' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>CodeceptJS v3.5.8 #StandWithUkraine
+'CodeceptJS' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+'Using' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>LoginNavigate --
+'LoginNavigate' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>  × Check if Start Private Session button is presen and visible and enabled in 204ms
+'×' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>-- FAILURES:
+'--' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>  1) LoginNavigate
+'1)' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>       Check if Start Private Session button is presen and visible and enabled:
+'Check' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>     Object of type Puppeteer is not defined in container
+'Object' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>      at getInjectedArguments (node_modules\codeceptjs\lib\scenario.js:213:13)
+The AT command has been deprecated. Please use schtasks.exe instead.
+
+Invalid command.
+
+The AT command schedules commands and programs to run on a computer at
+a specified time and date. The Schedule service must be running to use
+the AT command.
+
+AT [\\computername] [ [id] [/DELETE] | /DELETE [/YES]]
+AT [\\computername] time [/INTERACTIVE]
+    [ /EVERY:date[,...] | /NEXT:date[,...]] "command"
+
+\\computername     Specifies a remote computer. Commands are scheduled on the
+                   local computer if this parameter is omitted.
+id                 Is an identification number assigned to a scheduled
+                   command.
+/delete            Cancels a scheduled command. If id is omitted, all the
+                   scheduled commands on the computer are canceled.
+/yes               Used with cancel all jobs command when no further
+                   confirmation is desired.
+time               Specifies the time when command is to run.
+/interactive       Allows the job to interact with the desktop of the user
+                   who is logged on at the time the job runs.
+/every:date[,...]  Runs the command on each specified day(s) of the week or
+                   month. If date is omitted, the current day of the month
+                   is assumed.
+/next:date[,...]   Runs the specified command on the next occurrence of the
+                   day (for example, next Thursday).  If date is omitted, the
+                   current day of the month is assumed.
+"command"          Is the Windows NT command, or batch program to be run.
+
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>      at test.fn (node_modules\codeceptjs\lib\scenario.js:73:29)
+The AT command has been deprecated. Please use schtasks.exe instead.
+
+Invalid command.
+
+The AT command schedules commands and programs to run on a computer at
+a specified time and date. The Schedule service must be running to use
+the AT command.
+
+AT [\\computername] [ [id] [/DELETE] | /DELETE [/YES]]
+AT [\\computername] time [/INTERACTIVE]
+    [ /EVERY:date[,...] | /NEXT:date[,...]] "command"
+
+\\computername     Specifies a remote computer. Commands are scheduled on the
+                   local computer if this parameter is omitted.
+id                 Is an identification number assigned to a scheduled
+                   command.
+/delete            Cancels a scheduled command. If id is omitted, all the
+                   scheduled commands on the computer are canceled.
+/yes               Used with cancel all jobs command when no further
+                   confirmation is desired.
+time               Specifies the time when command is to run.
+/interactive       Allows the job to interact with the desktop of the user
+                   who is logged on at the time the job runs.
+/every:date[,...]  Runs the command on each specified day(s) of the week or
+                   month. If date is omitted, the current day of the month
+                   is assumed.
+/next:date[,...]   Runs the specified command on the next occurrence of the
+                   day (for example, next Thursday).  If date is omitted, the
+                   current day of the month is assumed.
+"command"          Is the Windows NT command, or batch program to be run.
+
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>  Artifacts:
+'Artifacts:' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Check_if_Start_Private_Session_button_is_presen_and_visible_and_enabled.failed.png
+'-' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>  FAIL  | 0 passed, 1 failed   // 1s
+'FAIL' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>Run with --verbose flag to see complete NodeJS stacktrace
+'Run' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if Start Private Session button is presen and visible and enabled"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  × Check if Start Private Session button is presen and visible and enabled in 176ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Check if Start Private Session button is presen and visible and enabled:
+     Object of type Puppeteer is not defined in container
+      at getInjectedArguments (node_modules\codeceptjs\lib\scenario.js:213:13)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:73:29)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Check_if_Start_Private_Session_button_is_presen_and_visible_and_enabled.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 1s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if Start Private Session button is presen and visible and enabled"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+  × Check if Start Private Session button is presen and visible and enabled in 275ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Check if Start Private Session button is presen and visible and enabled:
+     Object of type Puppeteer is not defined in container
+      at getInjectedArguments (node_modules\codeceptjs\lib\scenario.js:213:13)
+      at test.fn (node_modules\codeceptjs\lib\scenario.js:73:29)
+
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Check_if_Start_Private_Session_button_is_presen_and_visible_and_enabled.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 1s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check if Start Private Session button is presen and visible and enabled"
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 0ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Element is present!
+Number of elements containing 'Matt': 7
+  √ Search for Matt in 7299ms
+Element is present!
+Element is present!
+Element is present!
+Number of elements containing 'Myst': [object Promise]
+  √ Search for Myst and Experts in 7597ms
+Element is present!
+Element is present!
+Number of elements containing 'Ann': 18
+  √ Search for Ann in 6234ms
+Element is present!
+Number of elements containing 'psy': 12
+  √ Search for new in 6922ms
+Clicked on Signup button.
+  √ Check and Click Signup Button in 6955ms
+The "Get Credits" link is not present on the page.
+  √ Check if the Get Credits button in 6336ms
+The "Get Credits" link is not present on the page.
+  √ Check if the Add to favorites button in 6562ms
+Number of elements: [object Promise]
+  √ Count number of surprises buttons and print names of elements in 5960ms
+  √ Check if Start Private Session button is present_visible_enabled in 4209ms
+
+  OK  | 9 passed   // 1m
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>     Object of type Puppeteer is not defined in container^A
+'Object' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>command > output.txt
+'command' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>command > output.txt
+'command' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>
+C:\Users\Lenovo\Downloads\codeceptjs-master>output.txt
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>save output.txt
+'save' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>command >> output.txt
+'command' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+SyntaxError: Unexpected end of input
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+Unexpected end of input
+
+C:\Users\Lenovo\Downloads\codeceptjs-master\LoginAndPlayaround_test.js:316
+
+
+
+SyntaxError:
+    at internalCompileFunction (node:internal/vm:77:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1288:20)
+    at Module._compile (node:internal/modules/cjs/loader:1340:27)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1435:10)
+    at Module.load (node:internal/modules/cjs/loader:1207:32)
+    at Module._load (node:internal/modules/cjs/loader:1023:12)
+    at Module.require (node:internal/modules/cjs/loader:1235:19)
+    at require (node:internal/modules/helpers:176:18)
+    at C:\Users\Lenovo\Downloads\codeceptjs-master\node_modules\mocha\lib\mocha.js:414:36
+    at Array.forEach (<anonymous>)
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Clairvoyance shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+No visible elements containing "Clairvoyance" found on the page
+  √ Check Clairvoyance shows in 5415ms
+
+  OK  | 1 passed   // 7s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Tarot shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+No visible elements containing "Tarot" found on the page
+  √ Check Tarot shows in 5558ms
+
+  OK  | 1 passed   // 7s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Astrology shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+No visible elements containing "Astrology" found on the page
+  √ Check Astrology shows in 5326ms
+
+  OK  | 1 passed   // 6s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Dream shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+No visible elements containing "Dream" found on the page
+  √ Check Dream shows in 5241ms
+
+  OK  | 1 passed   // 6s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Family shows'"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 1ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Family shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+No visible elements containing "Family" found on the page
+  √ Check Family shows in 5337ms
+
+  OK  | 1 passed   // 6s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Family shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+No visible elements containing "Family" found on the page
+  √ Check Family shows in 5469ms
+
+  OK  | 1 passed   // 7s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Fortune shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 1ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Family shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+No visible elements containing "Family" found on the page
+  √ Check Family shows in 5241ms
+
+  OK  | 1 passed   // 6s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Numerology shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+
+  OK  | 0 passed   // 1ms
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Numerology shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Found visible elements containing "Numerology"
+  √ Check Numerology shows in 5994ms
+
+  OK  | 1 passed   // 7s
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Pet Psychic shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Found visible elements containing "pets"
+  × Check Pet Psychic shows in 6265ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Check Pet Psychic shows:
+
+      expected visible elements '[]' not to be empty
+      + expected - actual
+
+
+
+
+  Scenario Steps:
+  - I.seeElement("//a[contains(text(), "pets")]") at Test.<anonymous> (.\LoginAndPlayaround_test.js:453:31)
+  - I.amOnPage("https://www.oranum.com/en/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:450:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Check_Pet_Psychic_shows.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 7s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Pet Psychic shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Found visible elements containing "pets"
+  × Check Pet Psychic shows in 6263ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Check Pet Psychic shows:
+
+      expected visible elements '[]' not to be empty
+      + expected - actual
+
+
+
+
+  Scenario Steps:
+  - I.seeElement("//a[contains(text(), "pets")]") at Test.<anonymous> (.\LoginAndPlayaround_test.js:453:31)
+  - I.amOnPage("https://www.oranum.com/en/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:450:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Check_Pet_Psychic_shows.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 7s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Pet Psychic shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Found visible elements containing "pets"
+  × Check Pet Psychic shows in 6404ms
+
+-- FAILURES:
+
+  1) LoginNavigate
+       Check Pet Psychic shows:
+
+      expected visible elements '[]' not to be empty
+      + expected - actual
+
+
+
+
+  Scenario Steps:
+  - I.seeElement("//a[contains(text(), "pets")]") at Test.<anonymous> (.\LoginAndPlayaround_test.js:453:31)
+  - I.amOnPage("https://www.oranum.com/en/") at Test.<anonymous> (.\LoginAndPlayaround_test.js:450:5)
+
+  Artifacts:
+  - screenshot: C:\Users\Lenovo\Downloads\codeceptjs-master\output\Check_Pet_Psychic_shows.failed.png
+
+
+  FAIL  | 0 passed, 1 failed   // 8s
+Run with --verbose flag to see complete NodeJS stacktrace
+
+C:\Users\Lenovo\Downloads\codeceptjs-master>npx codeceptjs run --grep "Check Pet Psychic shows"
+Duplicate test names detected - Feature + Scenario name should be unique:
+LoginNavigate: Check Love shows and enabled
+CodeceptJS v3.5.8 #StandWithUkraine
+Using test root "C:\Users\Lenovo\Downloads\codeceptjs-master"
+
+LoginNavigate --
+Found visible elements containing "pets"
+  √ Check Pet Psychic shows in 5229ms
+
+  OK  | 1 passed   // 6s

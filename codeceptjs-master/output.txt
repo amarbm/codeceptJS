@@ -1,0 +1,12 @@
+ Volume in drive C is OS
+ Volume Serial Number is 16ED-9154
+
+ Directory of C:\Project\Executed_Script_Commands\codeceptjs-master
+
+11/29/2023  01:15 PM    <DIR>          .
+11/29/2023  10:42 AM    <DIR>          ..
+11/29/2023  01:18 PM    <DIR>          .github
+11/29/2023  10:24 AM    <DIR>          node_modules
+11/29/2023  10:24 AM    <DIR>          output
+               0 File(s)              0 bytes
+               5 Dir(s)  110,583,693,312 bytes free
